@@ -27,21 +27,22 @@ export default () => {
       {
         !user
         && (
-        <section>
-          <H2>Inicio de sesión</H2>
-          <div>
-            <H4>Correo</H4>
-            <input type="email" id="email" placeholder="Escribe tu correo" className="input-login" onChange={(event) => setEmail(event.target.value)} />
-            <H4>Contraseña</H4>
-            <input type="password" id="password" placeholder="Escribe contraseña" className="input-login" onChange={(event) => setPassword(event.target.value)} />
-          </div>
-          <div className="link">
-            <h6 className="h6"><a className="link-login">¿Olvidaste tu contraseña?</a></h6>
-          </div>
-          <button type="button" onClick={login} className="Btn">Iniciar sesión</button>
-        </section>
+          <section>
+            <H2>Inicio de sesión</H2>
+            <div>
+              <H4>Correo</H4>
+              <input type="email" id="email" placeholder="Escribe tu correo" className="input-login" onChange={(event) => setEmail(event.target.value)} />
+              <H4>Contraseña</H4>
+              <input type="password" id="password" placeholder="Escribe contraseña" className="input-login" onChange={(event) => setPassword(event.target.value)} />
+            </div>
+            <div className="link">
+              <h6 className="h6"><a className="link-login">¿Olvidaste tu contraseña?</a></h6>
+            </div>
+            <button type="button" onClick={login} className="Btn">Iniciar sesión</button>
+          </section>
         )
       }
+
     </div>
   );
 };
